@@ -10,7 +10,7 @@ class UserController extends Controller
     // 1. Listar usuarios
     public function index()
     {
-        $users = User::all();   // o User::paginate(10), si quieres paginar
+        $users = User::all();   // o User::paginate(10), para paginacion
         return view('users.index', compact('users'));
     }
 
