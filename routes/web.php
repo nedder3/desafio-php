@@ -18,3 +18,5 @@ Route::resource('roles', RoleController::class);
 //Ruta adicional para asignar roles a usuarios
 Route::post('users/{user}/roles', [UserController::class, 'assignRole'])
     ->name('users.assignRole');
+
+    
